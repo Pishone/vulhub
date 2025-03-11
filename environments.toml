@@ -215,7 +215,7 @@ app = "OpenPrinting Cups-Browsed"
 path = "cups-browsed/CVE-2024-47177"
 
 [[environment]]
-name = "Discuz 7.x/6.x Global Variable Defense Bypass to Code Execution"
+name = "Discuz 7.x/6.x Remote Code Execution via Global Variable Override"
 cve = []
 app = "Discuz!"
 path = "discuz/wooyun-2010-080723"
@@ -227,13 +227,13 @@ app = "Discuz!"
 path = "discuz/x3.4-arbitrary-file-deletion"
 
 [[environment]]
-name = "Django debug page XSS Flaw"
+name = "Django 500 Debug Page Cross-Site Scripting (XSS)"
 cve = ["CVE-2017-12794"]
 app = "Django"
 path = "django/CVE-2017-12794"
 
 [[environment]]
-name = "Django < 2.0.8 Arbitrary URL Redirection"
+name = "Django < 2.0.8 Open Redirect in CommonMiddleware"
 cve = ["CVE-2018-14574"]
 app = "Django"
 path = "django/CVE-2018-14574"
@@ -275,37 +275,37 @@ app = "Docker"
 path = "docker/unauthorized-rce"
 
 [[environment]]
-name = "Drupal < 7.32 'Drupalgeddon' SQL Injection"
+name = 'Drupal < 7.32 "Drupalgeddon" SQL Injection'
 cve = ["CVE-2014-3704"]
 app = "Drupal"
 path = "drupal/CVE-2014-3704"
 
 [[environment]]
-name = "Drupal Core 8 PECL YAML Deserialization Arbitrary Code Execution"
+name = "Drupal Core 8 PECL YAML Deserialization Remote Code Execution"
 cve = ["CVE-2017-6920"]
 app = "Drupal"
 path = "drupal/CVE-2017-6920"
 
 [[environment]]
-name = "Drupal Drupalgeddon 2 Remote Code Execution"
+name = "Drupal Drupalgeddon 2 Unauthenticated Remote Code Execution"
 cve = ["CVE-2018-7600"]
 app = "Drupal"
 path = "drupal/CVE-2018-7600"
 
 [[environment]]
-name = "Drupal Remote Code Execution"
+name = "Drupal Drupalgeddon 3 Authenticated Remote Code Execution"
 cve = ["CVE-2018-7602"]
 app = "Drupal"
 path = "drupal/CVE-2018-7602"
 
 [[environment]]
-name = "Drupal Remote Code Execution"
+name = "Drupal Remote Code Execution by phar deserialization"
 cve = ["CVE-2019-6339"]
 app = "Drupal"
 path = "drupal/CVE-2019-6339"
 
 [[environment]]
-name = "Drupal XSS"
+name = "# Drupal Cross-Site Scripting by File Upload"
 cve = ["CVE-2019-6341"]
 app = "Drupal"
 path = "drupal/CVE-2019-6341"
@@ -329,13 +329,13 @@ app = "ECshop"
 path = "ecshop/xianzhi-2017-02-82239600"
 
 [[environment]]
-name = "ElasticSearch Command Execution"
+name = "ElasticSearch Remote Code Execution"
 cve = ["CVE-2014-3120"]
 app = "ElasticSearch"
 path = "elasticsearch/CVE-2014-3120"
 
 [[environment]]
-name = "ElasticSearch Groovy Sandbox Bypass/Code Execution"
+name = "ElasticSearch Groovy Sandbox Bypass and Remote Code Execution"
 cve = ["CVE-2015-1427"]
 app = "ElasticSearch"
 path = "elasticsearch/CVE-2015-1427"
@@ -347,13 +347,13 @@ app = "ElasticSearch"
 path = "elasticsearch/CVE-2015-3337"
 
 [[environment]]
-name = "ElasticSearch Directory Traversal"
+name = "ElasticSearch Snapshot and Restore Directory Traversal"
 cve = ["CVE-2015-5531"]
 app = "ElasticSearch"
 path = "elasticsearch/CVE-2015-5531"
 
 [[environment]]
-name = "Elasticsearch Webshell"
+name = "ElasticSearch Arbitrary File Upload"
 cve = []
 app = "ElasticSearch"
 path = "elasticsearch/WooYun-2015-110216"
@@ -377,43 +377,43 @@ app = "elFinder"
 path = "elfinder/CVE-2021-32682"
 
 [[environment]]
-name = "Fastjson Deserialization to Arbitrary Command Execution"
+name = "Fastjson 1.2.24 Deserialization Remote Command Execution"
 cve = ["CVE-2017-18349"]
 app = "Fastjson"
 path = "fastjson/1.2.24-rce"
 
 [[environment]]
-name = "Fastjson 1.2.47 Remote Command Execution"
+name = "Fastjson 1.2.47 Deserialization Remote Command Execution"
 cve = []
 app = "Fastjson"
 path = "fastjson/1.2.47-rce"
 
 [[environment]]
-name = "FFmpeg Arbitrary File Read/SSRF"
+name = "FFmpeg Arbitrary File Read and SSRF"
 cve = ["CVE-2016-1897", "CVE-2016-1898"]
 app = "FFmpeg"
 path = "ffmpeg/CVE-2016-1897"
 
 [[environment]]
-name = "FFmpeg Arbitrary File Read"
+name = "FFmpeg AVI Arbitrary File Read"
 cve = ["CVE-2017-9993"]
 app = "FFmpeg"
-path = "ffmpeg/phdays"
+path = "ffmpeg/CVE-2017-9993"
 
 [[environment]]
-name = "Jinja2 SSTI Template Injection"
+name = "Flask (Jinja2) Server-Side Template Injection"
 cve = []
 app = "Jinja2"
 path = "flask/ssti"
 
 [[environment]]
-name = "Apache Flink File Upload"
+name = "Apache Flink Upload Path Traversal"
 cve = ["CVE-2020-17518"]
 app = "Apache Flink"
 path = "flink/CVE-2020-17518"
 
 [[environment]]
-name = "Apache Flink Jobmanager/Logs Directory Traversal"
+name = "Apache Flink `jobmanager/logs` Path Traversal"
 cve = ["CVE-2020-17519"]
 app = "Apache Flink"
 path = "flink/CVE-2020-17519"
@@ -443,19 +443,19 @@ app = "GeoServer"
 path = "geoserver/CVE-2024-36401"
 
 [[environment]]
-name = "GhostScript Sandbox Bypass (Command Execution)"
+name = "GhostScript Sandbox Bypass Command Execution"
 cve = ["CVE-2018-16509"]
 app = "Ghostscript"
 path = "ghostscript/CVE-2018-16509"
 
 [[environment]]
-name = "GhostScript Sandbox Bypass (Command Execution)"
+name = "GhostScript Sandbox Bypass Command Execution"
 cve = ["CVE-2018-19475"]
 app = "Ghostscript"
 path = "ghostscript/CVE-2018-19475"
 
 [[environment]]
-name = "GhostScript Sandbox Bypass (Command Execution)"
+name = "GhostScript Sandbox Bypass Command Execution"
 cve = ["CVE-2019-6116"]
 app = "Ghostscript"
 path = "ghostscript/CVE-2019-6116"
@@ -467,7 +467,7 @@ app = "Git"
 path = "git/CVE-2017-8386"
 
 [[environment]]
-name = "Gitea 1.4.0 Directory Traversal to Command Execution"
+name = "Gitea 1.4.0 Directory Traversal Leading to Remote Command Execution"
 cve = []
 app = "Gitea"
 path = "gitea/1.4-rce"
@@ -491,10 +491,10 @@ app = "GitList"
 path = "gitlist/CVE-2018-1000533"
 
 [[environment]]
-name = "GlassFish Arbitrary File Read"
-cve = []
+name = "GlassFish 4.1.0 Arbitrary File Read"
+cve = ["CVE-2017-1000028"]
 app = "GlassFish"
-path = "glassfish/4.1.0"
+path = "glassfish/CVE-2017-1000028"
 
 [[environment]]
 name = "GoAhead Remote Command Execution"
@@ -539,7 +539,13 @@ app = "Hadoop YARN"
 path = "hadoop/unauthorized-yarn"
 
 [[environment]]
-name = "Apache HTTPD Newline Parsing"
+name = "Apache HertzBeat SnakeYaml Deserialization Remote Code Execution"
+cve = ["CVE-2024-42323"]
+app = "Apache HertzBeat"
+path = "hertzbeat/CVE-2024-42323"
+
+[[environment]]
+name = "Apache HTTPD Newline Parsing Vulnerability"
 cve = ["CVE-2017-15715"]
 app = "Apache HTTP Server"
 path = "httpd/CVE-2017-15715"
@@ -563,13 +569,13 @@ app = "Apache HTTP Server"
 path = "httpd/CVE-2021-42013"
 
 [[environment]]
-name = "Apache HTTPD Unknown Suffix Parsing"
+name = "Apache HTTPD Multiple Extension Parsing Vulnerability"
 cve = []
 app = "Apache HTTP Server"
 path = "httpd/apache_parsing_vulnerability"
 
 [[environment]]
-name = "Apache SSI Remote Command Execution"
+name = "Apache HTTP Server SSI Remote Command Execution"
 cve = []
 app = "Apache HTTP Server"
 path = "httpd/ssi-rce"
@@ -623,31 +629,31 @@ app = "Java RMI"
 path = "java/rmi-codebase"
 
 [[environment]]
-name = "Java RMI Registry Deserialization Vulnerability (<=jdk8u111)"
+name = "Java ≤JDK 8u111 RMI Registry Deserialization Remote Code Execution"
 cve = []
 app = "Java RMI"
 path = "java/rmi-registry-bind-deserialization"
 
 [[environment]]
-name = "Java RMI Registry Deserialization Vulnerability (<jdk8u232_b09)"
+name = "Java < JDK8u232_b09 RMI Registry Deserialization Remote Code Execution Bypass"
 cve = []
 app = "Java RMI"
 path = "java/rmi-registry-bind-deserialization-bypass"
 
 [[environment]]
-name = "JBoss 5.x/6.x Deserialization"
+name = "JBoss 5.x/6.x Deserialization Remote Code Execution"
 cve = ["CVE-2017-12149"]
 app = "JBoss"
 path = "jboss/CVE-2017-12149"
 
 [[environment]]
-name = "JBoss 4.x JBossMQ JMS Deserialization"
+name = "JBoss 4.x JBossMQ JMS Deserialization Remote Code Execution"
 cve = ["CVE-2017-7504"]
 app = "JBoss"
 path = "jboss/CVE-2017-7504"
 
 [[environment]]
-name = "JBoss JMXInvokerServlet Deserialization"
+name = "JBoss JMXInvokerServlet Deserialization Remote Code Execution"
 cve = []
 app = "JBoss"
 path = "jboss/JMXInvokerServlet-deserialization"
@@ -659,7 +665,7 @@ app = "jeecg-boot"
 path = "jeecg-boot/CVE-2023-4450"
 
 [[environment]]
-name = "Jenkins-CI Remote Code Execution"
+name = "Jenkins Remote Code Execution"
 cve = ["CVE-2017-1000353"]
 app = "Jenkins"
 path = "jenkins/CVE-2017-1000353"
@@ -761,13 +767,19 @@ app = "Kibana"
 path = "kibana/CVE-2019-7609"
 
 [[environment]]
+name = "Kibana 7.6.2 upgrade-assistant-telemetry Prototype Pollution Leads to RCE"
+cve = ["CVE-2020-7012"]
+app = "Kibana"
+path = "kibana/CVE-2020-7012"
+
+[[environment]]
 name = "kkFileView ZipSlip Remote Code Execution"
 cve = []
 app = "kkFileView"
 path = "kkfileview/4.3-zipslip-rce"
 
 [[environment]]
-name = "Laravel Ignition 2.5.1 Code Execution"
+name = "Laravel Ignition 2.5.1 Remote Code Execution"
 cve = ["CVE-2021-3129"]
 app = "Laravel"
 path = "laravel/CVE-2021-3129"
@@ -785,13 +797,13 @@ app = "LibSSH"
 path = "libssh/CVE-2018-10933"
 
 [[environment]]
-name = "Liferay Portal CE Deserialization Command Execution"
+name = "Liferay Portal CE Deserialization Remote Code Execution"
 cve = ["CVE-2020-7961"]
 app = "Liferay Portal"
 path = "liferay-portal/CVE-2020-7961"
 
 [[environment]]
-name = "Apache Log4j Server Deserialization Command Execution"
+name = "Apache Log4j TCP Server Deserialization Remote Code Execution"
 cve = ["CVE-2017-5645"]
 app = "Apache Log4j"
 path = "log4j/CVE-2017-5645"
@@ -833,7 +845,7 @@ app = "MeterSphere"
 path = "metersphere/plugin-rce"
 
 [[environment]]
-name = "mini_httpd Arbitrary File Read"
+name = "ACME mini_httpd Arbitrary File Read"
 cve = ["CVE-2018-18778"]
 app = "mini_httpd"
 path = "mini_httpd/CVE-2018-18778"
@@ -857,7 +869,7 @@ app = "Mongo Express"
 path = "mongo-express/CVE-2019-10758"
 
 [[environment]]
-name = "MySQL Authentication Bypass"
+name = "MySQL Authentication Bypass Vulnerability"
 cve = ["CVE-2012-2122"]
 app = "MySQL"
 path = "mysql/CVE-2012-2122"
@@ -905,37 +917,37 @@ app = "Nexus Repository Manager"
 path = "nexus/CVE-2024-4956"
 
 [[environment]]
-name = "Nginx Filename Logic"
+name = "Nginx Filename Logic Vulnerability"
 cve = ["CVE-2013-4547"]
 app = "Nginx"
 path = "nginx/CVE-2013-4547"
 
 [[environment]]
-name = "Nginx Out-of-Bounds Read Cache"
+name = "Nginx Cache Leak by Integer Overflow"
 cve = ["CVE-2017-7529"]
 app = "Nginx"
 path = "nginx/CVE-2017-7529"
 
 [[environment]]
-name = "Nginx Configuration Errors"
+name = "Nginx Misconfiguration Vulnerabilities"
 cve = []
 app = "Nginx"
 path = "nginx/insecure-configuration"
 
 [[environment]]
-name = "Nginx Parsing"
+name = "Nginx Parsing Vulnerability"
 cve = []
 app = "Nginx"
 path = "nginx/nginx_parsing_vulnerability"
 
 [[environment]]
-name = "NodeJS Directory Traversal"
+name = "Node.js 8.5.0 Path Traversal"
 cve = ["CVE-2017-14849"]
 app = "Node.JS"
 path = "node/CVE-2017-14849"
 
 [[environment]]
-name = "node-postgres Code Execution"
+name = "Node-Postgres Remote Code Execution"
 cve = ["CVE-2017-16082"]
 app = "node-postgres"
 path = "node/CVE-2017-16082"
@@ -1055,13 +1067,13 @@ app = "PHP-CGI"
 path = "php/CVE-2012-1823"
 
 [[environment]]
-name = "PHP-IMAP Remote Command Execution"
+name = "PHP IMAP Remote Command Execution"
 cve = ["CVE-2018-19518"]
 app = "PHP-IMAP"
 path = "php/CVE-2018-19518"
 
 [[environment]]
-name = "PHP-FPM Remote Command Execution"
+name = "PHP-FPM Remote Code Execution"
 cve = ["CVE-2019-11043"]
 app = "PHP-FPM"
 path = "php/CVE-2019-11043"
@@ -1073,7 +1085,7 @@ app = "PHP"
 path = "php/CVE-2024-2961"
 
 [[environment]]
-name = "PHP-FPM FastCGI Unauthorized Access"
+name = "PHP-FPM FastCGI Unauthorized Access Leads to Remote Code Execution"
 cve = []
 app = "PHP-FPM"
 path = "php/fpm"
@@ -1085,7 +1097,7 @@ app = "PHP"
 path = "php/inclusion"
 
 [[environment]]
-name = "PHP XML Entity Injection"
+name = "PHP XML External Entity Injection (XXE)"
 cve = []
 app = "PHP"
 path = "php/php_xxe"
@@ -1139,25 +1151,25 @@ app = "PostgreSQL"
 path = "postgres/CVE-2018-1058"
 
 [[environment]]
-name = "PostgreSQL High Privilege Command Execution"
+name = "PostgreSQL Arbitrary Command Execution with Admin Privileges"
 cve = ["CVE-2019-9193"]
 app = "PostgreSQL"
 path = "postgres/CVE-2019-9193"
 
 [[environment]]
-name = "Python PIL Remote Command Execution (GhostButt)"
+name = "Python PIL/Pillow Remote Command Execution by GhostScript GhostButt"
 cve = ["CVE-2017-8291"]
 app = "Python"
 path = "python/PIL-CVE-2017-8291"
 
 [[environment]]
-name = "Python PIL Remote Command Execution (via Ghostscript)"
+name = "Python PIL/Pillow Remote Command Execution by GhostScript"
 cve = ["CVE-2018-16509"]
 app = "Python"
 path = "python/PIL-CVE-2018-16509"
 
 [[environment]]
-name = "Python Unpickle Deserialization"
+name = "Python Unpickle Deserialization Remote Code Execution"
 cve = []
 app = "Python"
 path = "python/unpickle"
@@ -1205,7 +1217,7 @@ app = "Apache RocketMQ"
 path = "rocketmq/CVE-2023-37582"
 
 [[environment]]
-name = "rsync Unauthorized Access"
+name = "Rsync Unauthorized Access"
 cve = []
 app = "rsync"
 path = "rsync/common"
@@ -1253,7 +1265,7 @@ app = "Apache Shiro"
 path = "shiro/CVE-2010-3863"
 
 [[environment]]
-name = "Apache Shiro 1.2.4 Deserialization"
+name = "Apache Shiro 1.2.4 Deserialization Remote Code Execution"
 cve = ["CVE-2016-4437"]
 app = "Apache Shiro"
 path = "shiro/CVE-2016-4437"
@@ -1289,7 +1301,7 @@ app = "Apache Solr"
 path = "solr/CVE-2017-12629-RCE"
 
 [[environment]]
-name = "Apache Solr XML Entity Injection"
+name = "Apache Solr XML External Entity Injection"
 cve = ["CVE-2017-12629"]
 app = "Apache Solr"
 path = "solr/CVE-2017-12629-XXE"
@@ -1301,19 +1313,19 @@ app = "Apache Solr"
 path = "solr/CVE-2019-0193"
 
 [[environment]]
-name = "Apache Solr Velocity Inject Remote Command Execution"
+name = "Apache Solr Remote Code Execution Via Velocity Template"
 cve = ["CVE-2019-17558"]
 app = "Apache Solr"
 path = "solr/CVE-2019-17558"
 
 [[environment]]
-name = "Apache Solr RemoteStreaming File Reading and SSRF"
+name = "Apache Solr RemoteStreaming Arbitrary File Reading and SSRF"
 cve = []
 app = "Apache Solr"
 path = "solr/Remote-Streaming-Fileread"
 
 [[environment]]
-name = "Apache Spark Unauthorized Access Leak"
+name = "Apache Spark Unauthorized Access Leads to Remote Code Execution"
 cve = []
 app = "Apache Spark"
 path = "spark/unacc"
@@ -1493,7 +1505,7 @@ app = "Apache Struts2"
 path = "struts2/s2-067"
 
 [[environment]]
-name = "Supervisord Remote Command Execution"
+name = "Supervisord XML-RPC Remote Command Execution"
 cve = ["CVE-2017-11610"]
 app = "Supervisor"
 path = "supervisor/CVE-2017-11610"
@@ -1505,7 +1517,7 @@ app = "TeamCity"
 path = "teamcity/CVE-2023-42793"
 
 [[environment]]
-name = "ThinkPHP 2.x Arbitrary Code Execution"
+name = "ThinkPHP 2.x Remote Code Execution"
 cve = []
 app = "ThinkPHP"
 path = "thinkphp/2-rce"
@@ -1583,13 +1595,13 @@ app = "V2board"
 path = "v2board/1.6-privilege-escalation"
 
 [[environment]]
-name = "WebLogic < 10.3.6 'wls-wsat' XMLDecoder Deserialization"
+name = "WebLogic < 10.3.6 'wls-wsat' XMLDecoder Deserialization Remote Command Execution"
 cve = ["CVE-2017-10271"]
 app = "WebLogic"
 path = "weblogic/CVE-2017-10271"
 
 [[environment]]
-name = "WebLogic WLS Core Components Deserialization Command Execution"
+name = "Weblogic WLS Core Components Deserialization Remote Command Execution"
 cve = ["CVE-2018-2628"]
 app = "WebLogic"
 path = "weblogic/CVE-2018-2628"
@@ -1613,13 +1625,13 @@ app = "WebLogic"
 path = "weblogic/CVE-2023-21839"
 
 [[environment]]
-name = "WebLogic SSRF"
+name = "Weblogic UDDI Explorer Server-Side Request Forgery (SSRF)"
 cve = []
 app = "WebLogic"
 path = "weblogic/ssrf"
 
 [[environment]]
-name = "WebLogic File Read"
+name = "WebLogic Weak Password, Arbitrary File Read and Remote Code Execution"
 cve = []
 app = "WebLogic"
 path = "weblogic/weak_password"
@@ -1673,7 +1685,13 @@ app = "Zabbix"
 path = "zabbix/CVE-2016-10134"
 
 [[environment]]
+name = "Zabbix Server Active Proxy Trapper Command Injection"
+cve = ["CVE-2017-2824"]
 app = "Zabbix"
+path = "zabbix/CVE-2017-2824"
+
+[[environment]]
+name = "Zabbix Server Active Proxy Trapper Command Injection Bypass"
 cve = ["CVE-2020-11800"]
+app = "Zabbix"
 path = "zabbix/CVE-2020-11800"
-name = "Zabbix Server Trapper Command Injection"
