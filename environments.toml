@@ -2,9 +2,9 @@ tags = [
     # Vulnerability type
     "Auth Bypass", "Backdoor", "Deserialization", "DoS", "Environment Injection", "Expression Injection", "File Upload", "File Deletion", "Hard Coding", "Info Disclosure", "Path Traversal", "Privilege Escalation", "RCE", "SQL Injection", "SSRF", "SSTI", "XXE", "XSS", "SSRF",
     # Application type
-    "CMS", "Database", "Framework", "Message Queue", "Webserver",
+    "CMS", "Database", "Framework", "Message Queue", "Webserver", "LLM",
     # Other
-    "Other",  
+    "Other",
 ]
 
 
@@ -471,6 +471,13 @@ path = "elfinder/CVE-2021-32682"
 tags = ["RCE"]
 
 [[environment]]
+name = "Unauthenticated Remote Code Execution in Erlang/OTP SSH"
+cve = ["CVE-2025-32433"]
+app = "Erlang/OTP SSH"
+path = "erlang/CVE-2025-32433"
+tags = ["RCE"]
+
+[[environment]]
 name = "Fastjson 1.2.24 Deserialization Remote Command Execution"
 cve = ["CVE-2017-18349"]
 app = "Fastjson"
@@ -632,6 +639,20 @@ path = "gogs/CVE-2018-18925"
 tags = ["Auth Bypass", "Path Traversal"]
 
 [[environment]]
+name = "Gradio File Path Traversal"
+cve = ["CVE-2023-51449"]
+app = "Gradio"
+path = "gradio/CVE-2023-51449"
+tags = ["Path Traversal", "LLM"]
+
+[[environment]]
+name = "Gradio Arbitrary File Read"
+cve = ["CVE-2024-1561"]
+app = "Gradio"
+path = "gradio/CVE-2024-1561"
+tags = ["Path Traversal", "LLM"]
+
+[[environment]]
 name = "Grafana 8.x Plug-in Module Directory Traversal"
 cve = ["CVE-2021-43798"]
 app = "Grafana"
@@ -646,11 +667,25 @@ path = "grafana/admin-ssrf"
 tags = ["SSRF"]
 
 [[environment]]
-name = "H2 Database Console Unauthorized Access"
-cve = []
+name = "H2 Database Web Console Authentication Remote Code Execution"
+cve = ["CVE-2018-10054"]
 app = "Springboot H2 Database"
-path = "h2database/h2-console-unacc"
-tags = ["Auth Bypass", "Database"]
+path = "h2database/CVE-2018-10054"
+tags = ["Database", "RCE"]
+
+[[environment]]
+name = "H2 Database Web Console Pre-Auth JNDI Injection RCE"
+cve = ["CVE-2021-42392"]
+app = "Springboot H2 Database"
+path = "h2database/CVE-2021-42392"
+tags = ["Database", "RCE"]
+
+[[environment]]
+name = "H2 Database Web Console Pre-Auth JDBC Attack RCE"
+cve = ["CVE-2022-23221"]
+app = "Springboot H2 Database"
+path = "h2database/CVE-2022-23221"
+tags = ["Database", "RCE"]
 
 [[environment]]
 name = "Hadoop YARN ResourceManager Unauthorized Access"
@@ -749,6 +784,13 @@ cve = ["CVE-2019-20933"]
 app = "InfluxDB"
 path = "influxdb/CVE-2019-20933"
 tags = ["Auth Bypass", "Hard Coding"]
+
+[[environment]]
+name = "Kubernetes Ingress-NGINX Unauthenticated Remote Code Execution"
+cve = ["CVE-2025-1974"]
+app = "ingress-nginx"
+path = "ingress-nginx/CVE-2025-1974"
+tags = ["RCE", "Webserver"]
 
 [[environment]]
 name = "Jackson-databind Deserialization Remote Command Execution"
@@ -931,6 +973,13 @@ cve = []
 app = "kkFileView"
 path = "kkfileview/4.3-zipslip-rce"
 tags = ["RCE", "Path Traversal"]
+
+[[environment]]
+name = "Langflow `validate/code` API Pre-Auth Remote Code Execution"
+cve = ["CVE-2025-3248"]
+app = "Langflow"
+path = "langflow/CVE-2025-3248"
+tags = ["LLM", "RCE"]
 
 [[environment]]
 name = "Laravel Ignition 2.5.1 Remote Code Execution"
@@ -1955,7 +2004,7 @@ path = "weblogic/CVE-2020-14882"
 tags = ["RCE", "Webserver"]
 
 [[environment]]
-name = "WebLogic Unauthorized Remote Code Execution"
+name = "WebLogic Pre-Auth Remote Command Execution"
 cve = ["CVE-2023-21839"]
 app = "WebLogic"
 path = "weblogic/CVE-2023-21839"
